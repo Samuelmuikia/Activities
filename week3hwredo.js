@@ -2,7 +2,6 @@
 const pizzToppings = ["pepperoni", "bacon", "sausage", "lemon"]
 function greetCustomer(Toppings) {
   let greeting = (`Welcome to johnny's pizza we offer`);
-   for (let topping of  toppings)
     greeting += ` ${Topping}`
    console.log (greeting);
 };
@@ -19,17 +18,22 @@ order += `coming up`
 getPizzaOrder(`large`, `stuffed crust`, `bacon`, `sausage`, `pepperoni`, `lemons`)
 
 function preparePizza ["size", "crust", "...Toppings"]
-let pizzaObject = {One $(size) $(crust) pizza with} ;
-for (let toping of  toppings)
-pizzaObject += ` ${Topping}`
-console.log(preparePizza("...Cooking pizza...");
-pizzaObject[];
-return ["size", "crust", "...Toppings"];
+ let pizzaObject = "...Cooking pizza..." ;
+ for (let toping of  toppings)
+ pizzaObject += ` ${Topping}`
+ console.log("...Cooking pizza...");
+ pizzaObject[];
+ return (pizzaObject);
 
 function servePizza {pizza}
-let pizza = ("Order up! Here's your large thick crust pizza with x, y, z, ... Enjoy!");
-for (let toping of  toppings)
+let pizza = `Order up! Here's your ${pizza.code} ${pizza.crust}crust pizza with x, y, z, ... Enjoy!`;
+for (let toping of  pizza.toppings){
 pizza += ` ${Topping}`
-console.log(servePizza(pizza);
+console.log(servePizza(pizza +"!");
 pizza[];
 return [size, crust, toppings];
+
+greetCustomer();
+servePizza(
+  preparePizza(getPizzaOrder("large", "stuffed crust", "bacon", "sausage", "pepperoni", "lemons"))
+);
